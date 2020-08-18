@@ -1,0 +1,129 @@
+.main{
+    width: 80vw;
+    height: 500px;
+    margin: 100px 10vw 0 10vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hello{
+    width: 50%;
+    height: 100%;  
+    display: grid;
+    place-items: center;
+    padding: 60px 60px 60px 0;
+}
+
+.hello p{
+    font: 400 4rem 'Russo One';
+    color: #fff;
+}
+
+.code{
+    width: 50%;
+    height: max-content;
+    padding: 40px 100px 40px; 
+}
+
+.code .json{
+    width: 100%;
+    height: 100%;
+    background: #2b2b2b;
+    border-radius: 1rem;
+    padding: 20px;
+    padding-bottom: 20px;
+    min-width: 350px;
+}
+
+.code .json p{
+    font: 400 1.6rem 'Roboto Mono';
+    color: white;
+}
+
+.prop{
+    color: #3FB92C;
+}
+
+.value{
+    color: #D9CA44;
+}
+
+.num-value{
+    color: #849DF7;
+}
+
+.tab{
+    padding-left: 40px;
+}
+
+.languages{
+    width: 80vw;
+    margin-left: 10vw;
+    display: flex;
+}
+
+.circle{
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(to bottom right,#03529a, #66a5ff);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+.circle img{
+    width: 45px;
+    height: auto;
+}
+@media (max-width: 600px){
+    .main{
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .hello{
+        width: 100%;
+        height: 100%;  
+        padding: 0;
+    }
+
+    .hello p{
+        font: 400 32px 'Russo One';
+    }
+
+    .code{
+        width: 100%;
+        padding: 0;
+    }
+
+    .code .json{
+        min-width: 150px;
+    }
+
+    .code .json p{
+        font-size: 1rem;
+    }
+
+    .languages{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+
+    .circle{
+        width: 40px;
+        height: 40px;
+        margin: 0;
+    }
+
+    .circle img{
+        width: 25px;
+        height: 25px;
+    }
+
+
+}

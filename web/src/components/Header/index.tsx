@@ -8,9 +8,9 @@ function Header() {
             <div className="box">
                 <p>Eduardo Correia</p>
                 <div className="links">
+                    <a href="">projetos</a>
                     <a href="">blog</a>
                     <a href="">contato</a>
-                    <a href="">projetos</a>
                 </div>
             </div>
         </header>
