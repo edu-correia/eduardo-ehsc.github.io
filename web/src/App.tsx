@@ -1,12 +1,11 @@
 import React from 'react';
 
-import LandingPage from './pages/LandingPage';
-import Projects from './pages/Projects';
+import Routes from './routes';
 
 function App() {
   return (
     <div className="App">
-      <Projects />
+      <Routes />
     </div>
   );
 }
