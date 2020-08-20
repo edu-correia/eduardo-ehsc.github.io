@@ -10,16 +10,12 @@ import blogIcon from '../../assets/blog.svg';
 function Header() {
     const [open, setOpen] = useState(false);
 
-    const openDropdown = () => {
-        setOpen(!open);
-    }
-
     return (
         <header>
             <div className="box">
                 <p className="name">Eduardo Correia</p>
 
-                <a href="#" className="dropdown" onClick={openDropdown}>
+                <a href="#" className="dropdown" onClick={() => setOpen(!open)}>
                     <img src={menuIcon} alt=""/>
                 </a>
 
