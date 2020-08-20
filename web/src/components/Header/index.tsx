@@ -19,7 +19,7 @@ function Header() {
                     <img src={menuIcon} alt=""/>
                 </a>
 
-                {open && <div className="menu">
+                {/*open && <div className="menu">
                     <a href="#" className="link">
                         <img src={projectsIcon} alt=""/>
                         projetos
@@ -32,7 +32,7 @@ function Header() {
                         <img src={contactIcon} alt=""/>
                         contato
                     </a>
-                </div>}
+    </div>*/}
             </div>
         </header>
     )
