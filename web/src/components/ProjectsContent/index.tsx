@@ -2,7 +2,7 @@ import React from 'react';
 
 import './styles.css';
 
-import starIcon from '../../assets/star.svg';
+import GridItem from './components/GridItem';
 
 function ProjectsContent(){
     return (
@@ -12,56 +12,13 @@ function ProjectsContent(){
             </h1>
 
             <div className="grid-projects">
-                <div className="grid-item">
-                    <div className="grid-content">
-                        <p className="repo-name">Proffy</p>
-                        <span className="repo-desc">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit numquam perspiciatis dolorem magni quaerat ipsa maiores nemo labore. Veniam, molestiae?
-                        </span>
-                        <div className="repo-language">
-                            Typescript
-                        </div>
-                        <a href="#">
-                            <p>25</p> 
-                            <span className="stars"> estrelas </span>
-                            <img src={starIcon} alt="Estrelas"/>
-                        </a>
-                    </div>
-                </div>
-
-                <div className="grid-item">
-                    <div className="grid-content">
-                        <p className="repo-name">Proffy</p>
-                        <span className="repo-desc">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit numquam perspiciatis dolorem magni quaerat ipsa maiores nemo labore. Veniam, molestiae?
-                        </span>
-                        <div className="repo-language">
-                            Typescript
-                        </div>
-                        <a href="#">
-                            <p>25</p> 
-                            <span className="stars"> estrelas </span>
-                            <img src={starIcon} alt="Estrelas"/>
-                        </a>
-                    </div>
-                </div>
-
-                <div className="grid-item">
-                    <div className="grid-content">
-                        <p className="repo-name">Proffy</p>
-                        <span className="repo-desc">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit numquam perspiciatis dolorem magni quaerat ipsa maiores nemo labore. Veniam, molestiae?
-                        </span>
-                        <div className="repo-language">
-                            Typescript
-                        </div>
-                        <a href="#">
-                            <p>25</p> 
-                            <span className="stars"> estrelas </span>
-                            <img src={starIcon} alt="Estrelas"/>
-                        </a>
-                    </div>
-                </div>
+                <GridItem 
+                    name="proffy"
+                    desc="lorem ipsum"
+                    language="typescript"
+                    stars="25"
+                    url="https://github.com"
+                />
             </div>
         </div>
     )
