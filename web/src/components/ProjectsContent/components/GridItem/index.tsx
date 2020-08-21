@@ -14,7 +14,7 @@ interface GridItemProps{
 
 const GridItem:React.FC<GridItemProps> = ({name, desc, language, stars, url}) => {
     return (
-        <div className="grid-item">
+        <a href={url} target="_blank" className="grid-item">
             <div className="grid-content">
                 <p className="repo-name">{name}</p>
 
@@ -26,13 +26,13 @@ const GridItem:React.FC<GridItemProps> = ({name, desc, language, stars, url}) =>
                     {language}
                 </div>
 
-                <a href="#">
+                <div className="stars-div">
                     <p>{stars}</p> 
                     <span className="stars">estrelas</span>
                     <img src={starIcon} alt="Estrelas"/>
-                </a>
+                </div>
             </div>
-        </div>
+        </a>
     )
 }
 
