@@ -1,72 +1,54 @@
 header{
-    width: 100vw;
-    height: 80px;
-    background-color: #2b2b2b;
-    display: grid;
-    place-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: max-content;
+    background: #2b2b2b;
+    z-index: 2;
 }
 
 .box{
     width: 80%;
+    margin-left: 10%;
+    padding: 10px 0 10px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-sizing: border-box;
+    position: relative;
 }
 
 .name{
+    font: 400 32px 'Russo One';
     color: #3792E6;
-    font: 400 2rem 'Russo One';
 }
 
-.menu{
-    position: absolute;
-    top: 70px;
-    margin-right: 10vw;
-    right: 0;
-    width: max-content;
-    height: max-content;
-    background: #4b4949;
+
+ .links{
+    width: 40%;
     display: flex;
-    flex-direction: column;
-    padding: 20px 15px 10px 15px;
-    border-radius: 8px;
-}
-
-.dropdown{
-    width: 50px;
-    height: 50px;
-    border-radius: 10%;
-    background-color: #fff;
-    display: grid;
-    place-items: center;
-}
-
-.dropdown img{
-    width: 30px;
-    height: 30px;
-}
+    align-items: center;
+    justify-content: space-between;
+ }
 
 .link{
-    width: 100%;
-    height: 40px;
-    background: #4b4949;
-    color: #fff;
-    font: 400 24px 'Russo One';
+    font: 400 16px 'Russo One';
     text-decoration: none;
-    padding: 10px 20px 40px 20px;
-    margin-bottom: 5px;
-    border-radius: 8px;
-
-    transition: all .3s;
-}
-
-.link:hover{
-    background: #968f8f;
+    color: white;
 }
 
 .link img{
-    width: 25px;
-    height: 25px;
     margin-right: 10px;
+    width: 15px;
+    height: 15px;
+}
+ 
+@media (max-width: 600px){
+    .box{
+        flex-direction: column;
+    }
+
+    .links{
+        margin-top: 25px;
+        width: 100%;
+    }
 }

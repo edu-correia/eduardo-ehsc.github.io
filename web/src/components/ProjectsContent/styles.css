@@ -1,8 +1,7 @@
 .projects-page{
     width: 80%;
     margin-left: 10%;
-    margin-top: 50px;
-    box-sizing: border-box;
+    margin-top: 100px;
 }
 
 .title-projects{
@@ -15,4 +14,10 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     margin-top: 25px;
+}
+
+@media (max-width: 600px){
+    .grid-projects{
+        grid-template-columns: 1fr;
+    }
 }
