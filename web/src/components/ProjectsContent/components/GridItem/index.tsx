@@ -3,6 +3,7 @@ import React from 'react';
 import './styles.css';
 
 import starIcon from '../../../../assets/star.svg';
+import { Link } from 'react-router-dom';
 
 interface GridItemProps{
     name: string;

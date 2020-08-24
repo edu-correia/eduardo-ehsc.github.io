@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 import './styles.css';
 
@@ -13,20 +14,20 @@ function Header() {
                 <p className="name">Eduardo Correia</p>
 
                 <div className="links">
-                    <a href="#" className="link">
-                        <img src={projectsIcon} alt=""/>
+                    <Link to="/projects" className="link">
+                        <img src={projectsIcon} alt="Projetos"/>
                         projetos
-                    </a>
+                    </Link>
 
-                    <a href="#" className="link">
-                        <img src={blogIcon} alt=""/>
+                    <Link to="/" className="link">
+                        <img src={blogIcon} alt="Blog"/>
                         blog
-                    </a>
+                    </Link>
                     
-                    <a href="#" className="link">
-                        <img src={contactIcon} alt=""/>
+                    <Link to="/" className="link">
+                        <img src={contactIcon} alt="Contato"/>
                         contato
-                    </a>
+                    </Link>
                 </div>
             </div>
         </header>
