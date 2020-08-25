@@ -14,7 +14,7 @@ function BlogItem(){
             <div className="post-title">
                 Uso de styled-components
                 <button onClick={() => (setToggle(!toggle))}>
-                    <img src={toggle === false ? arrowDownIcon : arrowUpIcon} alt="" className="toggle"/>
+                    <img src={toggle === false ? arrowDownIcon : arrowUpIcon} alt="Abrir" className="toggle"/>
                 </button>
             </div>
             <div className="post-languages">
@@ -29,7 +29,7 @@ function BlogItem(){
             {toggle && <span className="post-content">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, ad corrupti asperiores vel sit incidunt eveniet beatae. Quasi placeat magnam iste ullam perferendis dolore ab, consectetur aliquid, quod id quas quibusdam provident vel magni eius labore debitis. Aspernatur, quaerat odio?
             </span>}
-            <img src={quoteIcon} alt="" className="quotes"/>
+            <img src={quoteIcon} alt="Aspas" className="quotes"/>
         </div>  
     )
 }
