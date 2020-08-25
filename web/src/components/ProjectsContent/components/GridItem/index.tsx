@@ -13,7 +13,7 @@ interface GridItemProps{
     url: string;
 }
 
-const GridItem:React.FC<GridItemProps> = ({name, desc, language, stars, url}) => {
+const GridItem:React.FC<GridItemProps> = ({name, desc, language = "Markdown", stars, url}) => {
     return (
         <a href={url} target="_blank" className="grid-item">
             <div className="grid-content">

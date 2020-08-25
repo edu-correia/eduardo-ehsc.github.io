@@ -11,7 +11,7 @@ function Header() {
     return (
         <header>
             <div className="box">
-                <p className="name">Eduardo Correia</p>
+                <Link to="/" className="name">Eduardo Correia</Link>
 
                 <div className="links">
                     <Link to="/projects" className="link">
@@ -19,7 +19,7 @@ function Header() {
                         projetos
                     </Link>
 
-                    <Link to="/" className="link">
+                    <Link to="/blog" className="link">
                         <img src={blogIcon} alt="Blog"/>
                         blog
                     </Link>
